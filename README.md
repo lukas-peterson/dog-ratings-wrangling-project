@@ -1,7 +1,10 @@
 # Wrangle Report
 
 Created by Lukas Peterson, Udacity Student
-A description of my wrangling efforts to clean dog rating tweets from the Twitter user WeRateDogs for Udacity Data Analyst Nanodegree program
+
+A description of my wrangling efforts to clean dog rating tweets from the Twitter user WeRateDogs for Udacity Data Analyst Nanodegree program. 
+
+`wrangle_act.ipynb` contains the data wrangling code. Data files included in root directory.
 
 # Project Goal:
 
@@ -11,9 +14,11 @@ The goal of this project is to effectively wrangle data related to dog ratings. 
 
 The data for this project comes from three locations each using a different method of gathering:
 
-    A CSV flat file on-hand titled: twitter-archive-enhanced.csv. Use the Pandas method to_csv() to import this file into a dataframe.
-    Image predictions from a neural network predictive model based on the images in each tweet. Download this file from a hosted Udacity server using the requests package.
-    Each tweets metrics: favorite count and retweet count obtained from the Twitter API. Obtain these metrics and store them as a dataframe using the tweepy package.
+- A CSV flat file on-hand titled: twitter-archive-enhanced.csv. Use the Pandas method to_csv() to import this file into a dataframe.
+- Image predictions from a neural network predictive model based on the images in each tweet. Download this file from a hosted Udacity server using the requests package.
+- Each tweets metrics: favorite count and retweet count obtained from the Twitter API. Obtain these metrics and store them as a dataframe using the tweepy package.
+
+All data files have been included in this project
 
 ## Assess:
 
@@ -23,23 +28,23 @@ Second, programmatically assess the dataframes by looking at the column informat
 Quality Issues:
 Twitter archive dataframe assessments include:
 
-    Some rows include information on retweets and reply tweets, we are only concerned with base tweets
-    There are several retweet and reply columns we do not need
-    Some values are missing in the expanded_urls field
-    Several dog names are missing or incorrect
-    Timestamp column is incorrect datatype of object
-    Some ratings were incorrectly identified from the tweets
-    Source column contained unnecessary HTML tags and formatting
-    Tweet_id column is of type int, we do not need to do any analysis so it should be changed to string
+  - Some rows include information on retweets and reply tweets, we are only concerned with base tweets
+  - There are several retweet and reply columns we do not need
+  - Some values are missing in the expanded_urls field
+  - Several dog names are missing or incorrect
+  - Timestamp column is incorrect datatype of object
+  - Some ratings were incorrectly identified from the tweets
+  - Source column contained unnecessary HTML tags and formatting
+  - Tweet_id column is of type int, we do not need to do any analysis so it should be changed to string
 
 Twitter metric assessments include:
 
-    Datatypes of retweet_count and favorite_count are incorrect
+  - Datatypes of retweet_count and favorite_count are incorrect
 
 Tidiness Issues:
 
-    The twitter archive dataframe has four columns for each dog type
-    The data is separated into three tables, but our data all correlates to the same observation object, dog rating tweets
+  - The twitter archive dataframe has four columns for each dog type
+  - The data is separated into three tables, but our data all correlates to the same observation object, dog rating tweets
 
 # Clean:
 
