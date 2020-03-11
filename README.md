@@ -6,11 +6,11 @@ A description of my wrangling efforts to clean dog rating tweets from the Twitte
 
 `wrangle_act.ipynb` contains the data wrangling code. Data files included in root directory.
 
-# Project Goal:
+## Project Goal:
 
 The goal of this project is to effectively wrangle data related to dog ratings. The data is sourced from the twitter user WeRateDogs. Once we have effectively gathered, assessed, and cleaned our data in this project, it can be used by our analysts downstream.
 
-# Gather:
+## Gather:
 
 The data for this project comes from three locations each using a different method of gathering:
 
@@ -46,7 +46,7 @@ Tidiness Issues:
   - The twitter archive dataframe has four columns for each dog type
   - The data is separated into three tables, but our data all correlates to the same observation object, dog rating tweets
 
-# Clean:
+## Clean:
 
 To clean the data, create a copy of each dataframe and then follow the Define – Code -Test process for each of the documented issues. Address the tidiness concerns first then the quality issues.
 Tidiness Cleaning:
@@ -60,7 +60,7 @@ To address some column quality issues I used Pandas methods for drop, clip, re-a
 
 Once I cleaned all the documented issues I saved the data to a master dataframe and csv table using Pandas to_csv() method.
 
-# Conclusion:
+## Conclusion:
 
 I was able to successfully clean many of the tidiness and quality issues in the dataset, however there are still many issues related to missing data we could not address. Dog names, dog types are examples of missing data we may never be able to collect if the original user did not include them in the data gathering phase. Tweet URLs are an example of missing data we may be able to collect in the future by programatically scraping the tweets, or manual data entry.
 
